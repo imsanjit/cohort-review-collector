@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dff9fb;
+    padding: 16px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8c8c8;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#theme-button {
+    background-color: #080808e8;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#theme-button:hover {
+    background-color: #080808e8;
+    border: 2px solid palevioletred;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.item-list {
+    border: 1px solid #d1d5db;
+    border-radius: 16px;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-list li {
+    padding: 16px;
+    text-align: left;
+}
+
+.item-list li:nth-child(odd) {
+    background-color: #d6e1f7;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text-area {
+    width: 95%;
+    height: 160px;
+    padding: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 16px;
+    background-color: #f0f4e0b7;
+}
+
+#submit-button {
+    width: 100%;
+    background-color: #10b981;
+    color: #ffffff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#submit-button:hover {
+    background-color: #059669;
+}
+
+#text-reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text-reviews button {
+    margin-left: auto;
+    background-color: #f78484b9;
+    color: #080808;
+    border: none;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+#text-reviews button:hover {
+    background-color: #fe1919b6;
+}
+
+.item-list button {
+    position: relative;
+    top: 8px;
+    right: 8px;
+    background-color: #ef4444;
+    color: #ffffff;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    margin-left: auto;
+}
+
+.item-list button:hover {
+    background-color: #dc2626;
+}
